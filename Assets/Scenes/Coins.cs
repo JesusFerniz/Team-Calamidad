@@ -14,11 +14,10 @@ public class Coins : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        AudioSource.PlayClipAtPoint(clip, this.transform.position);
-        Destroy(this.gameObject);
+
         GameManager gameManager = FindObjectOfType<GameManager>();
         gameManager.AddCoin();
-
+        Destroy(this.gameObject);
         //Debug.Log("Moneda : " + this.gameObject.name);
     }
 }
