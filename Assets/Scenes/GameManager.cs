@@ -11,10 +11,9 @@ public class GameManager : MonoBehaviour
 
     public void AddCoin()
     {
-        coins = coins + 10;
-        Debug.Log("Puntuación: " + coins);
+       
+        
 
-        coinText.text = "Puntuación: " + coins;
     }
 
     public void GameOver()
